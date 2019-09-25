@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Hello World</title>
+</head>
+
+<body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+ function App(props) {
+  return (<div>
+    <header>
+	<h1>Sally Student</h1>
+	<img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student front picture" height="400" width="250"/>
+</header>
+
+<main>
+<section>
+<h2> Education </h2>
+<ul>
+  <li>M.S.:Manufacturing Leadership at Rochester Institute of Technology</li>
+  <li>Bachelor Industrial Engineer at PUCMM </li>
+  <li>Associate Degree in Applied Management at Tompkins Courtland Community College </li>
+</ul>
+</section>
+<section>
+<h2> Experience </h2>
+<h3>Sr. Manufacturing Engineer | Eaton RWDD | Lincoln, IL | 2016 to Present</h3>
+<p>Responsible for the process of continuous improvement of High volume assembly area which runs 3 shifts with approximately 170 employees. Monitored and analyzed workflow, processes, procedures, and line activities, identifying and resolving bottlenecks to maximize efficiency.</p>
+
+<h3>Industrial Engineer | Mana Products | Queens, NY | 2011-2016</h3>
+<p>Responsible for the operational performance of the assembly department. Worked with our customer service and accounting department to create and validate Items Operating Standards to abide to costing and customer requirements.</p> 
+<h3>Manufacturing Engineer|Eaton MCCB | Haina, Dominican Republic | 2009-2010</h3>                                    
+<p>Responsible for Molding De-flashing area that supplies molded bases and covers for a breaker assembly facility.  
+Drove the creation of a critical parts list for the preventative maintenance of the equipment.
+Initiated the collection of information to build the key performing metrics of the area. 
+Provide proper tools to reduce the risk of creating non-conforming products.
+Update of workload according to current demand.</p>
+</section>
+<section>
+  <h2> Contact Information</h2>
+  <p> For further inquiries:</p>
+  <address>
+  <p><a href="mailto:SallyStudent@thinkful.com?Subject=Reaching out">SallyStudent@thinkful.com</a></p>
+  <p><a href="tel:13057440543">(305)-744-0543</a></p></address></section>
+</main>	
+  </div>
+    
+  );
+}
+ReactDOM.render(
+    <App className='my-class'>
+    
+  </App>,
+  document.querySelector('#application-root')
+);
+
+ 
+    </script>
+</body>
+
+</html>
